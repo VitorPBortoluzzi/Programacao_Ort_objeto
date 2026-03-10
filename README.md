@@ -27,4 +27,6 @@
 * Alt+Shift+R --> Refatorar variaveis  
 
 
-## Tarefas:
+## Orientação a Objetos
+### Classe é uma Estrutura
+![Diagrama de Classe](./Imagens/Classe.png)
