@@ -4,6 +4,17 @@ public class Carro {
 	public String marca;
 	public String modelo;
 	
+//	public Carro(String marcaCarro, String modeloCarro) {
+//		System.out.println("Estou no construtor");
+//		marca = marcaCarro;
+//		modelo = modeloCarro;
+//	}
+//	
+//	public Carro(String marca) {
+//		System.out.println("Estou no construtor");
+//		this.marca = marca;
+//	}
+	
 	public void Alugar() {
 		System.out.println("O Carro de marca: "+ marca + " & Modelo: " + modelo +" foi alugado;");
 	}

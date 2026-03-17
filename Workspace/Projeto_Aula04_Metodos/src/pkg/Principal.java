@@ -1,52 +1,34 @@
 package pkg;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Principal {
 
 	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		Carro_const c = new Carro_const("VW","Gol");
+		System.out.println("Marca do carro: " + c.marca);
+		System.out.println("Modelo do carro: " + c.modelo);
 		
-//		Carro c = new Carro();
-//		Carro c2 = new Carro();
+		String marca, modelo;
+		System.out.print("Digite a marca do carro: ");
+		marca = teclado.nextLine();
+		System.out.print("Digite o modelo do carro: ");
+		modelo = teclado.nextLine();
 		
+		Carro_const c2 = new Carro_const(marca,modelo);
+		System.out.println("Marca do carro2: " + c2.marca);
+		System.out.println("Modelo do carro2: " + c2.modelo);
 
-//		Carro[] car = new Carro[5];
-
-//		//Precisa ainda iniciar cada objeto do vetor
-//		for(int i = 0; i < car.length; i++) {
-//		    car[i] = new Carro();
-//		}
-//		ArrayList<Carro> carros = new ArrayList<>();
-//		Carro c1 = new Carro();
-//		c1.marca = "VW";
-//		c1.modelo = "Gol";
-//			
-//		carros.add(c1);
-//		
-//		car[0].marca = "VW";
-//		car[0].modelo = "Gol";
-//		
-//		car[0].Alugar();
-//		car[0].Devolver();
-//		//--------------Método and ToString--------------
-//		car[0].exibirDados();
-//		System.out.println(car[0]);
-//		//-----------------------------------------------
-//		
-
-
-//		
-//		car[1].exibirDados();
-//		teclado.close();
-
-//		Calculadora c = new Calculadora();
-////		c.a = 4.37;
-////		c.b = 4.47;
-//		double resultado;
-//		resultado = c.somar(4.87 , 5.33);
-//		System.out.println("Resultado da soma: " + resultado);
+		System.out.print("Digite a marca e modelo do carro: ");
+		Carro_const c3 = new Carro_const(teclado.nextLine(),teclado.nextLine());
+		System.out.println("Marca do carro 3: " + c3.marca);
+		System.out.println("Modelo do carro 3: " + c3.modelo);
 		
+		Carro_const c4 = new Carro_const("Ford");
+		System.out.println("Marca do carro 4: " + c4.marca);
+		
+		teclado.close();
 	}
 
 }
