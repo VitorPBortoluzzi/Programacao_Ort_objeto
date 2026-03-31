@@ -12,16 +12,19 @@ public class Principal {
 		Scanner teclado = new Scanner(System.in);
 		int numero;
 		DecimalFormat df = new DecimalFormat("#.##");
-		System.out.print("Digite um numero inteiro. ao qual deseja verificar a raiz quadrada: ");
+		System.out.print("Digite um numero inteiro positivo. ao qual deseja verificar a raiz quadrada: ");
 		try {
 			numero = teclado.nextInt();
-			double raizQuadrada = Math.sqrt(numero);
-			System.out.println(df.format(raizQuadrada));
+			if (numero < 0) {System.out.println("Número inválido.");}
+			else {
+				double raizQuadrada = Math.sqrt(numero);
+				System.out.println(df.format(raizQuadrada));
+			}
 		}catch (InputMismatchException e) {
 			System.out.println("Tipo de váriavel incorreta, por favor insira um numero inteiro");
 		} catch (Exception e) {
 			// TODO: handle exception
-			System.out.println(e);
+			System.out.println("Erro:" +e);
 		}
 		
 	}
