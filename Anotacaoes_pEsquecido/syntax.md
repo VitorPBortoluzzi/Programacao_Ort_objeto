@@ -385,5 +385,3 @@ O Java realiza:
 
 O construtor garante que **todo objeto seja criado já com seus dados inicializados**, deixando o objeto pronto para uso.
 
-```
-```
