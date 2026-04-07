@@ -1,0 +1,53 @@
+# =========================
+# Eclipse
+# =========================
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders/
+
+# Arquivos de projeto Eclipse
+.project
+.classpath
+
+# =========================
+# Java
+# =========================
+*.class
+*.log
+
+# =========================
+# Maven
+# =========================
+target/
+
+# =========================
+# Gradle
+# =========================
+.gradle/
+build/
+
+# =========================
+# IntelliJ (caso abra no futuro)
+# =========================
+.idea/
+*.iml
+out/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# Sistema Operacional
+# =========================
+.DS_Store
+Thumbs.db
