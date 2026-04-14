@@ -1,0 +1,1 @@
+![Represente a imagem abaixo](image.png)
