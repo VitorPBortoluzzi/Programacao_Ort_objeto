@@ -1,5 +1,18 @@
 ## 🧠 Programação Orientada a Objetos em Java (Resumo Completo)
 
+## 🔗 Índice
+- [📌 Objeto em Java](#-objeto-em-java)
+- [👷‍♂️ Construtor em Java](#️-construtor-em-java)
+- [🔒 Encapsulamento em Java](#-encapsulamento-em-java)
+- [📦 Trabalhando com múltiplos objetos](#-trabalhando-com-múltiplos-objetos)
+- [🚀 Exemplo prático (CRUD simples)](#-exemplo-prático-crud-simples)
+- [🧬 Herança em Java](#-herança-em-java)
+- [🔑 Modificadores de acesso](#-modificadores-de-acesso)
+- [📦 Herança entre pacotes](#-herança-entre-pacotes)
+- [👷‍♂️ Uso do super](#️-uso-do-super)
+- [🔁 Override (Sobrescrita)](#-override-sobrescrita)
+- [🧾 Método toString()](#-método-tostring-em-objetos-detalhe-importante)
+
 # 📌 Objeto em Java
 
 Um **objeto** é uma **instância de uma classe**, ou seja, a representação concreta de algo, contendo:
@@ -372,3 +385,121 @@ public void emitirSom() {
 
 ✔ Mesmo nome
 ✔ Mesmo comportamento base, porém modificado
+
+````md
+---
+
+# 🧾 Método `toString()` em Objetos (Detalhe Importante)
+
+O método `toString()` é usado para **representar um objeto como texto**.
+
+---
+
+## 🔹 Comportamento padrão do Java
+
+Se você NÃO sobrescrever o `toString()`, o Java retorna:
+
+```text
+nomeDoPacote.NomeClasse@hashCode
+````
+
+### 🔹 Exemplo
+
+```java
+Pessoa p = new Pessoa("Carlos", 40);
+System.out.println(p);
+```
+
+✔ Saída padrão:
+
+```text
+pkg.Pessoa@1a2b3c
+```
+
+---
+
+## ❗ Problema comum
+
+Ao usar um objeto dentro de outro:
+
+```java
+", socio=" + socio
+```
+
+✔ Resultado indesejado:
+
+```text
+socio=pkg.Pessoa@1a2b3c
+```
+
+---
+
+## ✅ Solução 1 (RECOMENDADA): sobrescrever `toString()` na classe
+
+```java
+@Override
+public String toString() {
+    return "Pessoa [nome=" + nome + ", idade=" + idade + "]";
+}
+```
+
+✔ Agora:
+
+```java
+System.out.println(socio);
+```
+
+✔ Saída:
+
+```text
+Pessoa [nome=Carlos, idade=40]
+```
+
+---
+
+## ✅ Solução 2: acessar atributos manualmente
+
+```java
+", socio=" + socio.getNome()
+```
+
+✔ Saída:
+
+```text
+socio=Carlos
+```
+
+---
+
+## 🔹 Exemplo completo em `PessoaJuridica`
+
+```java
+@Override
+public String toString() {
+    return "PessoaJuridica [CNPJ=" + CNPJ 
+        + ", socio=" + socio 
+        + ", dtAbertura=" + dtAbertura 
+        + ", nome=" + nome
+        + ", idade=" + idade + "]";
+}
+```
+
+✔ Com `toString()` sobrescrito em `Pessoa`, a saída fica legível
+
+---
+
+## 🔑 Boas práticas
+
+* Sempre sobrescreva `toString()` em classes de modelo
+* Facilita debug e exibição de dados
+* Evita saída com referência de memória
+* Torna o sistema mais legível
+
+---
+
+## 🧠 Resumo
+
+* `toString()` → converte objeto em texto
+* Sem sobrescrita → mostra endereço de memória
+* Com sobrescrita → mostra dados úteis
+* Essencial ao trabalhar com objetos dentro de objetos
