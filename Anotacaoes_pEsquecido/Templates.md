@@ -12,7 +12,6 @@
 ## 📁 Estrutura do Pacote
 
 ```
-
 templates/
 ├── Main.java
 ├── utils/
@@ -21,8 +20,7 @@ templates/
 │    └── DataParser.java
 └── core/
 └── Menu.java
-
-````
+```
 
 ---
 
@@ -56,7 +54,7 @@ public class InputUtils {
         return sc.nextLine();
     }
 }
-````
+```
 
 ---
 

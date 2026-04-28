@@ -353,6 +353,8 @@ public class Cachorro extends Animal {
 
     public Cachorro(String nome, int idade) {
         super(nome, idade, "Au au");
+        //O msm que:
+            //Animal a = new Animal(nome,idade,"Au au")
     }
 }
 ```
@@ -386,8 +388,6 @@ public void emitirSom() {
 ✔ Mesmo nome
 ✔ Mesmo comportamento base, porém modificado
 
-````md
----
 
 # 🧾 Método `toString()` em Objetos (Detalhe Importante)
 
@@ -401,7 +401,7 @@ Se você NÃO sobrescrever o `toString()`, o Java retorna:
 
 ```text
 nomeDoPacote.NomeClasse@hashCode
-````
+```
 
 ### 🔹 Exemplo
 
