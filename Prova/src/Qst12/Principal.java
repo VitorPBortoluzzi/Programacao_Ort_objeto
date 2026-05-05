@@ -84,7 +84,10 @@ public class Principal {
 					id = teclado.nextInt()-1;
 					System.out.print("Situação: ");
 					Alunos[id].aprovado();
-					
+				
+				// case 0:
+				// 	System.exit(0);
+				// EM caso de while usar para encerrar while(true)
 					
 				default:
 					break;

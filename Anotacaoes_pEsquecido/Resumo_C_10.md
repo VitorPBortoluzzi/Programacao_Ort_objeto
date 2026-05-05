@@ -1,19 +1,19 @@
 ## 🧠 Programação Orientada a Objetos em Java (Resumo Completo)
 
 ## 🔗 Índice
-- [📌 Objeto em Java](#-objeto-em-java)
-- [👷‍♂️ Construtor em Java](#️-construtor-em-java)
-- [🔒 Encapsulamento em Java](#-encapsulamento-em-java)
-- [📦 Trabalhando com múltiplos objetos](#-trabalhando-com-múltiplos-objetos)
-- [🚀 Exemplo prático (CRUD simples)](#-exemplo-prático-crud-simples)
-- [🧬 Herança em Java](#-herança-em-java)
-- [🔑 Modificadores de acesso](#-modificadores-de-acesso)
-- [📦 Herança entre pacotes](#-herança-entre-pacotes)
-- [👷‍♂️ Uso do super](#️-uso-do-super)
-- [🔁 Override (Sobrescrita)](#-override-sobrescrita)
-- [🧾 Método toString()](#-método-tostring-em-objetos-detalhe-importante)
+- [📌 Objeto em Java](#objeto-em-java)
+- [👷‍♂️ Construtor em Java](#️construtor-em-java)
+- [🔒 Encapsulamento em Java](#encapsulamento-em-java)
+- [📦 Trabalhando com múltiplos objetos](#trabalhando-com-múltiplos-objetos)
+- [🚀 Exemplo prático (CRUD simples)](#exemplo-prático-crud-simples)
+- [🧬 Herança em Java](#herança-em-java)
+- [🔑 Modificadores de acesso](#modificadores-de-acesso)
+- [📦 Herança entre pacotes](#herança-entre-pacotes)
+- [👷‍♂️ Uso do super](#️uso-do-super)
+- [🔁 Override (Sobrescrita)](#override-sobrescrita)
+- [🧾 Método toString()](#método-tostring-em-objetos-detalhe-importante)
 
-# 📌 Objeto em Java
+# Objeto em Java
 
 Um **objeto** é uma **instância de uma classe**, ou seja, a representação concreta de algo, contendo:
 
@@ -51,7 +51,7 @@ p.falar();
 
 ---
 
-# 👷‍♂️ Construtor em Java
+# Construtor em Java
 
 O **construtor** é responsável por **criar e inicializar o objeto**, garantindo que ele já comece com valores definidos e válidos.
 
@@ -109,7 +109,7 @@ public Pessoa(String nome, int idade) {
 
 ---
 
-# 🔒 Encapsulamento em Java
+# Encapsulamento em Java
 
 Encapsulamento é o princípio de **proteger os dados** e permitir acesso controlado.
 
@@ -198,7 +198,7 @@ Vitor|23
 
 ---
 
-# 📦 Trabalhando com múltiplos objetos
+# Trabalhando com múltiplos objetos
 
 ## 🔹 Vetor (array fixo)
 
@@ -231,7 +231,7 @@ System.out.println(lista.get(0).getNome());
 
 ---
 
-# 🚀 Exemplo prático (CRUD simples)
+# Exemplo prático (CRUD simples)
 
 ```java
 import java.util.ArrayList;
@@ -266,8 +266,8 @@ public class Sistema {
 ```
 ---
 
-# 🧬 Herança e uso de `super` em Java
-# 📌 Herança em Java
+# Herança e uso de `super` em Java
+# Herança em Java
 
 Herança permite que uma classe **herde atributos e métodos** de outra.
 
@@ -295,7 +295,7 @@ public class Cachorro extends Animal {
 
 ---
 
-# 🔑 Modificadores de acesso
+# Modificadores de acesso
 
 | Modificador | Mesma classe | Mesmo pacote | Subclasse outro pacote |
 | ----------- | ------------ | ------------ | ---------------------- |
@@ -306,7 +306,7 @@ public class Cachorro extends Animal {
 
 ---
 
-# 📦 Herança entre pacotes
+# Herança entre pacotes
 
 ```java
 package pacote1;
@@ -330,7 +330,7 @@ public class Cachorro extends Animal {
 
 ---
 
-# 👷‍♂️ Uso do `super`
+# Uso do `super`
 
 ## 🔹 Construtor da superclasse
 
@@ -376,7 +376,7 @@ public void emitirSom() {
 
 ---
 
-# 🔁 Override (Sobrescrita)
+# Override (Sobrescrita)
 
 ```java
 @Override
@@ -389,7 +389,7 @@ public void emitirSom() {
 ✔ Mesmo comportamento base, porém modificado
 
 
-# 🧾 Método `toString()` em Objetos (Detalhe Importante)
+# Método `toString()` em Objetos (Detalhe Importante)
 
 O método `toString()` é usado para **representar um objeto como texto**.
 
