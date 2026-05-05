@@ -6,7 +6,7 @@ public class Principal {
 	
 	
 	public static void main(String[] args) {
-		Pessoa pessoa;
+		
 		
 //		Pessoa p = new Pessoa();
 //		p.trabalhar();
@@ -14,6 +14,9 @@ public class Principal {
 //		Programador p = new Programador();
 //		p1.trabalhar();
 		
+		//Adiar uma decisão
+		
+		Pessoa pessoa;
 		System.out.println("Digite 1 para pessoa:");
 		System.out.println("Digite 2 para programador");
 		Scanner teclado = new Scanner(System.in);
