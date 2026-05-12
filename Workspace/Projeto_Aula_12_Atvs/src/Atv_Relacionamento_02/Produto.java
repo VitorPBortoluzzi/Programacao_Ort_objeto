@@ -1,0 +1,27 @@
+package Atv_Relacionamento_02;
+
+//2 - Crie uma classe Produto com os atributos nome e preco. Em outra classe, crie
+//um método criarProdutoDesconto(String nome, double preco) que retorna um objeto
+//Produto com 10% de desconto aplicado ao preço.
+
+public class Produto {
+	private String nome;
+	private double preco;
+	
+	
+	
+	public Produto(String nome, double preco) {
+		this.nome = nome;
+		this.preco = preco;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	public double getPreco() {
+		return preco;
+	}
+	
+	
+	
+}

@@ -1,6 +1,6 @@
 package pkg;
 
-public class Endereco extends Principal2 {
+public class Endereco{
 	private String rua;
 	private int numero;
 	

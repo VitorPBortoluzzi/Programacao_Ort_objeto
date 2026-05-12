@@ -10,6 +10,5 @@ public class Principal3{
 		//System.out.println("Endereco: " + p2.getEndereco());
 		System.out.println("Endereco: " + p2.getEndereco().toString());
 		System.out.println("Endereco: \n \t Rua: " + p2.getEndereco().getRua() + "\n \t Número: " + p2.getEndereco().getNumero() );
-		System.out.print("Texto original\b\b\b");
 	}
 }
